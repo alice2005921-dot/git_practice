@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人自我介紹 | ERP 工程師之路</title>
+    <style>
+        /* 基礎樣式設定 */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 導覽列 */
+        header {
+            background: var(--primary-color);
+            color: #fff;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero 區塊 */
+        .hero {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 0 20px;
+            margin-top: 50px;
+        }
+
+        /* 內容區塊通用樣式 */
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Holland 碼卡片樣式 */
+        .holland-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .card {
+            background: #eef2f3;
+            padding: 15px;
+            border-radius: 5px;
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        /* 表格樣式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        /* 頁尾 */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            background: var(--primary-color);
+            color: white;
+            margin-top: 50px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer a {
+            color: #3498db;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#skills">專業技能</a></li>
+                <li><a href="#contact">聯絡我</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>李羿慧</h1>
+        <p>資訊管理學生 | 未來 ERP 工程師 | 數據與藝術的實踐者</p>
+    </div>
+
+    <section id="about">
+        <h2>關於我</h2>
+        <p>
+            我目前專注於資訊管理與統計學的領域。在課堂之外，我喜歡研究資料庫設計與前端技術。
+            我致力於將複雜的企業流程，透過程式邏輯與數據分析轉化為高效的系統解決方案。
+        </p>
+
+        <h3>Holland 碼特質分析</h3>
+        <div class="holland-grid">
+            <div class="card">
+                <strong>C 事務型 (Conventional)</strong>
+                <p>我細心且具組織力，對數據準確度有極高要求，這是身為 ERP 工程師處理資料庫的核心基礎。</p>
+            </div>
+            <div class="card">
+                <strong>A 藝術型 (Artistic)</strong>
+                <p>在嚴謹的邏輯下，我也保有用創意解決問題的直覺，並注重使用者介面的美感與易用性。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>專業技能</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>領域</th>
+                    <th>具體技術</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>開發技術</td>
+                    <td>HTML5, CSS3, SQL 語法, WAMP Stack 環境架設</td>
+                </tr>
+                <tr>
+                    <td>數據分析</td>
+                    <td>機率與統計應用、常態分佈分析、資料庫正規化 (2NF/3NF)</td>
+                </tr>
+                <tr>
+                    <td>語言與其他</td>
+                    <td>韓文學習中、CORTIS 藝術美學研究</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer id="contact">
+        <h2>聯絡資訊</h2>
+        <p>期待與你交流技術或職涯想法！</p>
+        <ul>
+            <li>Email: <a href="mailto:your-email@example.com">alice2005921@gmail.com</a></li>
+            <li>GitHub: <a href="#">YourGitHubLink</a></li>
+        </ul>
+        <br>
+        <p>&copy; 2026 [你的姓名]. 專為卓越而生。</p>
+    </footer>
+
+</body>
+</html>
